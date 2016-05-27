@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Popup 页</title>
+    <link rel="stylesheet" type="text/css" href="../semanticui/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+</head>
+
+<body>
+    <div class="ui form">
+        <h2 class="ui dividing centered header">Add A Rule For This Page</h2>
+        <div class="field">
+            <label>Web Match Regex</label>
+            <div class="fields">
+                <div class="sixteen wide field">
+                    <input type="text" placeholder="First Name">
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>Javascript</label>
+            <div class="fields">
+                <div class="sixteen wide field">
+                    <div id="edJS" class="aceEditor"></div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>CSS</label>
+            <div class="fields">
+                <div class="sixteen wide field">
+                  <div id="edCSS" class="aceEditor"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../semanticui/semantic.min.js"></script>
+    <script src="../ace/ace.js"></script>
+    <script src="../js/popup.js"></script>
+</body>
+
+</html>

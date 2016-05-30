@@ -6,21 +6,26 @@
     <title>Popup 页</title>
     <link rel="stylesheet" type="text/css" href="../semanticui/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    <style type="text/css">
+      #save,#reset {
+        margin-bottom: 10px;
+      }
+    </style>
 </head>
 
 <body>
-    <div class="ui form">
+    <div class="ui form formClass">
         <h2 class="ui dividing centered header">Add A Rule For This Page</h2>
         <div class="field">
-            <label>Web Match Regex</label>
+            <label class="formLabel">Web Match Regex</label>
             <div class="fields">
                 <div class="sixteen wide field">
-                    <input type="text" placeholder="First Name">
+                    <input id="url" type="text" placeholder="url or regex">
                 </div>
             </div>
         </div>
         <div class="field">
-            <label>Javascript</label>
+            <label class="formLabel">Javascript</label>
             <div class="fields">
                 <div class="sixteen wide field">
                     <div id="edJS" class="aceEditor"></div>
@@ -28,18 +33,21 @@
             </div>
         </div>
         <div class="field">
-            <label>CSS</label>
+            <label class="formLabel">CSS</label>
             <div class="fields">
                 <div class="sixteen wide field">
                   <div id="edCSS" class="aceEditor"></div>
                 </div>
             </div>
         </div>
+        <div id="save" class="ui button">Save</div>
+        <div id="reset" class="ui button">Reset</div>
     </div>
 
     <script src="../jquery/jquery.min.js"></script>
     <script src="../semanticui/semantic.min.js"></script>
     <script src="../ace/ace.js"></script>
+    <script src="../ace/ext-language_tools.js"></script>
     <script src="../js/popup.js"></script>
 </body>
 

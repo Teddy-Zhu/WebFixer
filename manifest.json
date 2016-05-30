@@ -8,21 +8,26 @@
         "alarms",
         "notifications",
         "storage",
+        "tabs",
         "<all_urls>",
         "webRequest",
         "webRequestBlocking"
     ],
     "content_scripts": [{
-        "matches": ["*://*"],
-        "js": ["../jquery/jquery.min.js", "../js/action.js"],
+        "matches": [
+            "http://*/*",
+            "https://*/*",
+            "file:///*"
+        ],
+        "js": ["jquery/jquery.min.js", "js/action.js"],
         "run_at": "document_end"
     }],
     "browser_action": {
         "default_icon": "icon/icon38.png",
         "default_title": "web fix adder",
-        "default_popup": "popup.html"
+        "default_popup": "html/popup.html"
     },
-    "options_page": "options.html",
+    "options_page": "html/options.html",
     "icons": {
         "16": "icon/icon16.png",
         "48": "icon/icon48.png",

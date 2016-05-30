@@ -1,5 +1,5 @@
 body {
-    width: 250px;
+    width: 400px;
     border: solid 1px;
     background: #f2f3f5;
 }
@@ -7,4 +7,11 @@ body {
     position: absolute;
     min-height: 100px;
     width: 100%;
+}
+.formClass {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.formLabel {
+    text-align: center;
 }

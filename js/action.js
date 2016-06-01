@@ -1,3 +1,5 @@
-$(function(){
-  console.log('start');
+$(function() {
+    var url = window.location.href;
+    
+
 })

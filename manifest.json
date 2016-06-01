@@ -13,13 +13,17 @@
         "webRequest",
         "webRequestBlocking"
     ],
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "optional_permissions": ["unlimitedStorage"],
     "content_scripts": [{
         "matches": [
             "http://*/*",
             "https://*/*",
             "file:///*"
         ],
-        "js": ["jquery/jquery.min.js", "js/action.js"],
+        "js": ["lib/jquery/jquery.min.js", "js/action.js"],
         "run_at": "document_end"
     }],
     "browser_action": {
@@ -33,13 +37,5 @@
         "48": "icon/icon48.png",
         "128": "icon/icon128.png"
     },
-    "web_accessible_resources": ["img/user_info_background.gif", "img/loading.gif"],
-    "commands": {
-        "newMsg": {
-            "suggested_key": {
-                "default": "Ctrl+E"
-            },
-            "description": "查看 V2EX 消息"
-        }
-    }
+    "web_accessible_resources": ["img/user_info_background.gif", "img/loading.gif"]
 }

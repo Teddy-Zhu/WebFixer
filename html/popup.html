@@ -4,13 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Popup 页</title>
-    <link rel="stylesheet" type="text/css" href="../semanticui/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/semanticui/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="../css/popup.css">
-    <style type="text/css">
-      #save,#reset {
-        margin-bottom: 10px;
-      }
-    </style>
 </head>
 
 <body>
@@ -20,7 +15,13 @@
             <label class="formLabel">Web Match Regex</label>
             <div class="fields">
                 <div class="sixteen wide field">
-                    <input id="url" type="text" placeholder="url or regex">
+                    <input class="url" type="text" placeholder="url or regex">
+                </div>
+                <div class="sixteen wide field">
+                    <input class="url" type="text" placeholder="url or regex">
+                </div>
+                <div class="sixteen wide field">
+                    <input class="url" type="text" placeholder="url or regex">
                 </div>
             </div>
         </div>
@@ -36,18 +37,20 @@
             <label class="formLabel">CSS</label>
             <div class="fields">
                 <div class="sixteen wide field">
-                  <div id="edCSS" class="aceEditor"></div>
+                    <div id="edCSS" class="aceEditor"></div>
                 </div>
             </div>
         </div>
-        <div id="save" class="ui button">Save</div>
-        <div id="reset" class="ui button">Reset</div>
+        <div class="ui centered field grid row">
+            <div id="save" class="ui button">Save</div>
+            <div id="reset" class="ui button">Reset</div>
+        </div>
     </div>
 
-    <script src="../jquery/jquery.min.js"></script>
-    <script src="../semanticui/semantic.min.js"></script>
-    <script src="../ace/ace.js"></script>
-    <script src="../ace/ext-language_tools.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/semanticui/semantic.min.js"></script>
+    <script src="../lib/ace/ace.js"></script>
+    <script src="../lib/ace/ext-language_tools.js"></script>
     <script src="../js/popup.js"></script>
 </body>
 

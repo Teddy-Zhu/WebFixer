@@ -1,7 +1,7 @@
 $(function() {
     var editorJavascript = ace.edit("edJS"),
         editorCSS = ace.edit("edCSS"),
-        editUrls = $('.val'),
+        editUrls = $('.url'),
         originUrl;
     editorJavascript.setTheme("ace/theme/eclipse");
     editorJavascript.getSession().setMode("ace/mode/javascript");
@@ -18,7 +18,7 @@ $(function() {
         },
         function(tabs) {
             originUrl = tabs[0].url;
-            editUrls[0].val(originUrl);
+            $(editUrls[0]).val(originUrl);
         }
     );
     $('#save').on('click', function() {
